@@ -9,10 +9,10 @@ import java.io.*;
 /*
 To Do:
 -Corruption update
-    -CPT_Endless hack - creates corruption
+   -CPT_Endless hack - creates corruption
    -PUR_Counter hack - deletes corruption
    -STABLIZER locagon - stops spread of corruption
--Saving
+-Bug testing
 */
 
 public class HexagonServer
@@ -175,7 +175,7 @@ public class HexagonServer
       {
          println("[+]Socket ["+socket.toString()+"] SUCCESS: RUN");
          printer.println(">>HEXAGON ONLINE<<");
-         printer.println("v1.1.0 : 11/8/17");
+         printer.println("v1.1.1 : 9/8/18");
          printer.println("(C) Hexagon Studios");
          printer.println("READ THE TUTORIAL! TYPE TUT/1 FOR TUTORIAL! READ IT! READ IT!");
          printer.println("Run CMD/ and HEX/ for command lists.");
@@ -1149,14 +1149,6 @@ public class HexagonServer
                else
                   printer.println("[!] UNABLE TO PICK UP BIT - YOU HAVE 60 BITS ALREADY");
             }
-         }
-         else if (world[user.row][user.column].owner.equals("World - Unowned"))
-         {
-            printer.println("[>] HEX BONUS FOUND! CONGRATS!");
-            int gain = world[user.row][user.column].level*100;
-            printer.println("[>] +"+gain+"<#>");
-            user.hexes += gain;
-            world[user.row][user.column] = new HexBlock("NOTHING",1);
          }
       }
       
