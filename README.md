@@ -13,11 +13,11 @@ You will require somewhere to host the server (it runs on java) and as many play
 From there, just run the server. The players then join in by running their HexNet programs, which are compatible with all Hexagon/HexNet java games by me, MillerHollinger. You will need the IP of the host.
 
 ## Included Files
-HEXid.java : Class for data storage for each player.
-HexBlock.java : Class for storing each world block's data.
-**HexagonServer.java : Run this on the server.**
-InventoryItem.java : Class for storing the data of each item in a player's inventory.
+HEXid.java : Class for data storage for each player.  
+HexBlock.java : Class for storing each world block's data.  
+**HexagonServer.java : Run this on the server.**  
+InventoryItem.java : Class for storing the data of each item in a player's inventory.  
 
-[Download HexNet from my repository](https://github.com/MillerHollinger/HexNet)
+[Download HexNet from my repository](https://github.com/MillerHollinger/HexNet)  
 
 Thanks for playing! Have fun.
