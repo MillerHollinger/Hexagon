@@ -18,6 +18,6 @@ HexBlock.java : Class for storing each world block's data.
 **HexagonServer.java : Run this on the server.**  
 InventoryItem.java : Class for storing the data of each item in a player's inventory.  
 
-[Download HexNet from my repository](https://github.com/MillerHollinger/HexNet)  
+[Download HexNet from my repository](https://github.com/MillerHollinger/Random)  
 
 Thanks for playing! Have fun.
