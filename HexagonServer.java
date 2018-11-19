@@ -2,9 +2,8 @@ import java.util.*;
 import java.net.*;
 import java.io.*;
 
-//Copyright Miller Hollinger, enforced by don't-be-a-jerk law
-//If you are not Miller Hollinger, delete this program!!! 
-//If I figure out you're hosting a server w/o permission, you're toast!!!
+// Made by Miller Hollinger
+// Use HexNet to connect to the server
 
 /*
 To Do:
@@ -1855,10 +1854,10 @@ public class HexagonServer
       public void visualizeWorld()
       {
          printer.println("[>] <WORLD>");
-         for (int i = user.row - 3; i <= user.row + 3; i++)
+         for (int i = user.row - 5; i <= user.row + 5; i++)
          {
             printer.print("[>] ");
-            for (int j = user.column - 3; j <= user.column + 3; j++)
+            for (int j = user.column - 5; j <= user.column + 5; j++)
                try
                {
                   printer.print(world[i][j].getDisplay());
@@ -2201,7 +2200,7 @@ public class HexagonServer
                printer.println("[>] is has hacked their base and stolen their <#>!     ");
                break;
             default:
-               printer.println("[>] The HEX/ tutorial is being remade. Wait for an update.");
+               printer.println("[!] Invalid page number.");
                break;
          }
       }
